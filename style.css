@@ -1,0 +1,205 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Hind", "Arial", "Helvetica", "sans-serif";
+  height: 100%;
+  background: #75cdc1;
+  color: #000;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 20em;
+}
+
+/* HEADER */
+header {
+  padding: 20px 0 10px 0;
+  background: #36867c;
+  text-align: center;
+}
+
+.header__username {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.header__title {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 3.49rem;
+  font-weight: 300;
+}
+.wrapper {
+  height: 20vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 4em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* MAIN SECTION */
+main {
+  padding-top: 30px;
+}
+
+/* Input and "add" button */
+.submission-line__input {
+  padding-left: 10px;
+  height: 44px;
+  width: 66.6666%;
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3rem;
+
+}
+
+.submission-line__input::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.submission-line__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+}
+
+.submission-line__btn {
+  float: right;
+  height: 46px;
+  width: 27.33333%;
+  background: #FFC107;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  border: none;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.submission-line__input,
+.submission-line__btn {
+  margin-bottom: 16px;
+}
+
+
+/*Delete All Button */
+
+.deleteAll__btn {
+  padding-left: 10px;
+  height: 50px;
+  width: 67%;
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.deleteAll__btn::placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.deleteAll__btn:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+}
+
+.deleteAll__btn {
+  float: right;
+  height: 52px;
+  width: 30%;
+  background: #FFC107;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  border: none;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.deleteAll__btn,
+.deleteAll__btn {
+  margin-bottom: 16px;
+}
+
+/* List, list items, and list item buttons */
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+}
+
+.list__item {
+  font-size: 1.3rem;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.list__item:nth-child(odd) {
+  background: #43d3c0;
+}
+
+.list__item:nth-child(even) {
+  background: #2f8579;
+}
+
+.list__delete-btn {
+  cursor: pointer;
+  float: left;
+  margin: -5px;
+  padding: 5px 9px;
+}
+
+.list__check-btn {
+  cursor: pointer;
+  float: right;
+  margin: -5px;
+  padding: 4px 8px;
+}
+
+/* Checked-off item list formatting */
+
+/* (Increased specificity to override the even/odd psuedoclasses) */
+.list .list__item--checked {
+  background: #98ece1;
+  color: rgba(0, 0, 0, 0.38);
+  text-decoration: line-through;
+}
+
+.list__delete-btn--checked,
+.list__check-btn--checked {
+  color: rgba(0, 0, 0, 0.38);
+}

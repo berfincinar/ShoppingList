@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Harun Kara</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alışveriş Listesi</title>
+<link href='https://fonts.googleapis.com/css?family=Hind:300,400' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <img src="shopping.png" style="width: 70%; height: 70%;">
+        </div>
+        <div class="wrapper">
+            <div class="typing-demo">
+              Alışveriş Listesi
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <div class="container">
+            <!--  Input and "add" button  -->
+            <input class="submission-line__input" type="text" maxlength="20" placeholder="Ürün Ekle...">
+            <button class="submission-line__btn">Ekle</button>
+            <!--  List, list items, and list item buttons  -->
+            <ul class="list">
+                <li class="list__item"><a class="list__delete-btn">X</a>Süt<a class="list__check-btn">✔</a></li>
+                <li class="list__item"><a class="list__delete-btn">X</a>Yumurta<a class="list__check-btn">✔</a></li>
+                <li class="list__item list__item--checked"><a class="list__delete-btn list__delete-btn--checked">X</a>Ekmek<a class="list__check-btn list__check-btn--checked">✔</a></li>      
+                <button class="deleteAll__btn">Tümünü Sil</button>     
+            </ul>
+           
+        </div>
+    </main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
